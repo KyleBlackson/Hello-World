@@ -1,4 +1,5 @@
 using System;
+using System.IO.Compression;
 using System.Security.Cryptography;
 
 class Program
@@ -6,8 +7,10 @@ class Program
     static void Main(string[] args)
     {
         int x = 20;
+        int y = 30;
+        int z = 40;
 
-        if (x == 10)
+        if (x == 10 && y ==30 || z ==40)
         {
             Console.WriteLine("X is 10");
             Console.WriteLine("Y is fun");
