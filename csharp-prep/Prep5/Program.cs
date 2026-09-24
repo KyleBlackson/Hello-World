@@ -10,10 +10,10 @@ class Program
         Console.Write("Please enter you favorite number: ");
         string blank = Console.ReadLine();
         int favnum = int.Parse(blank);
-        Console.Write("Please enter your birth year");
+        Console.Write("Please enter your birth year: ");
         string blankOne = Console.ReadLine();
         int birthYear = int.Parse(blankOne);
-        Console.WriteLine(name+", the square of your number is"+favnum*favnum);
-        Console.WriteLine(name+", you will turn"+(2026-birthYear)+" this year");
+        Console.WriteLine(name+", the square of your number is "+favnum*favnum);
+        Console.WriteLine(name+", you will turn "+(2026-birthYear)+" this year");
     }
 }
