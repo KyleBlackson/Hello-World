@@ -16,6 +16,15 @@ class Program
         job2._startYear = 2030;
         job2._endYear = 2070;
 
+
+        Resume myResume = new Resume();
+        myResume._name = "Kyle Blackson";
+
+        myResume.Display();
+
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
+        
         job1.ShowJob();
         job2.ShowJob();
 
