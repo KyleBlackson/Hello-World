@@ -5,6 +5,20 @@ using System.Security.Cryptography;
 
 class Program
 {
+    static double AddNumbers(double x, int y)
+    {
+        return x + y;
+    }
+
+    static string MyName()
+    {
+        return "Bob";
+    }
+
+    static void DisplayGreeting(string name)
+    {
+        Console.WriteLine($"Welcome {name}, its nice to meet you");
+    }
     static void Main(string[] args)
     {
     //     int x = 20;
@@ -33,17 +47,18 @@ class Program
     //         done = Console.ReadLine().ToLower() == "y";
     //     }while (! done);
 
-    for(int i = 100000; i >= -100000; i-=100000)
-        {
-            Console.WriteLine(i);
-        }
+    // for(int i = 100000; i >= -100000; i-=100000)
+    //     {
+    //         Console.WriteLine(i);
+    //     }
 
-    List <string> myFriends = new List<string> {"Bob", {"Betty"},"Bubba"};
+    // List <string> myFriends = new List<string> {"Bob", {"Betty"},"Bubba"};
 
-    myFriends.Add("Doug");
-    foreach(string friend in myFriends)
-        {
-            Console.WriteLine(friend);
-        }
+    // myFriends.Add("Doug");
+    // foreach(string friend in myFriends)
+    //     {
+    //         Console.WriteLine(friend);
+    //     }
+
     }
 }
