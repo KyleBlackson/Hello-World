@@ -16,9 +16,9 @@ class Program
         job2._startYear = 2030;
         job2._endYear = 2070;
 
+        job1.ShowJob();
+        job2.ShowJob();
 
-        Console.WriteLine(job2._career);
-        Console.WriteLine(job1._career);
     }
 
 }
