@@ -14,7 +14,7 @@ class Menu
             Console.WriteLine("1. Create new Journal Entry.");
             Console.WriteLine("2. Display all Journal Entries.");
             Console.WriteLine("3. Save Journal to a file.");
-            Console.WriteLine("4.Read Journal from a file.");
+            Console.WriteLine("4. Read Journal from a file.");
             Console.WriteLine("5. Quit.");
             Console.Write(">");
             input = int.Parse(Console.ReadLine());

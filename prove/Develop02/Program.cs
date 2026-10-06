@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
@@ -7,7 +9,7 @@ class Program
         Menu myMenu = new Menu();
 
         int response = 0;
-        
+
         while(response != 5)
 
         {
@@ -16,10 +18,17 @@ class Program
             {
                 case 1:
                     Console.WriteLine("Create");
+                    JournalEntry create = new JournalEntry();
+                    string log1 = create.CreateJournalEntry();
+                    
                     // Call CreateJournalEntry()
                     break;
                 case 2:
                     Console.WriteLine("Display");
+                    JournalEntry display = new JournalEntry();
+                    display.DisplayEntries();
+                    //display.SaveToFile();
+
                     //Call Display Journal()
                     break;
                 case 3:                
