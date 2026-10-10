@@ -20,7 +20,12 @@ public class JournalEntry
         Console.WriteLine($"{_response}");
     }
 
-    public void CreateJournalEntry2()
+/// <summary>
+/// 
+/// </summary>
+    public string _userInput;
+    static List<JournalEntry> userLogs = new List<JournalEntry>();
+    public string CreateJournalEntry()
     {
         string [] prompts =
         {
@@ -31,21 +36,10 @@ public class JournalEntry
         _prompt = prompts[0];
         Console.WriteLine($"{_prompt} ");
         _response = Console.ReadLine();
-    }
 
-/// <summary>
-/// 
-/// </summary>
-    public string _userInput;
-    static List<JournalEntry> userLogs = new List<JournalEntry>();
-    public string CreateJournalEntry()
-    {
-        Console.WriteLine("Insert Random Question???");
-
-
-        //JournalEntry log2 = new JournalEntry();
-        //log2._userInput = Console.ReadLine();
-        //userLogs.Add(log2);
+        JournalEntry log2 = new JournalEntry();
+        log2._userInput = Console.ReadLine();
+        userLogs.Add(log2);
 
 
         foreach (JournalEntry item in userLogs)
@@ -58,13 +52,10 @@ public class JournalEntry
     //static void SaveToFile(List<JournalEntry> userLogs)
     public void DisplayEntries()
     {
-
-
         foreach (JournalEntry item in userLogs)
         {
             Console.WriteLine(item._userInput);
         }
-
      }
 
     public string CreateFileSystemString()

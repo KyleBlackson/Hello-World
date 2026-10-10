@@ -1,4 +1,4 @@
-class Journal
+public class Journal
 {
     public List <JournalEntry> _entries;
 
@@ -31,11 +31,8 @@ class Journal
         }
     }
 
-    
     public void ReadFromFile(string filename)
-
     {
-
         string[] lines = System.IO.File.ReadAllLines(filename);
         foreach (string line in lines)
 
@@ -45,9 +42,7 @@ class Journal
             string prompt = parts[1];
             string response = parts[2];
             JournalEntry entry = new JournalEntry(prompt, response, date); 
-
             this.CreateEntry(entry);
-
         }
 
     }
