@@ -12,6 +12,8 @@ class Program
 
         while(response != 5)
 
+        //JournalEntry = new JournalEntry();
+        //myEntry.CreateJournalEntry();
         {
             response = myMenu.ProcessMenu();
             switch(response)
@@ -20,7 +22,6 @@ class Program
                     Console.WriteLine("Create");
                     JournalEntry create = new JournalEntry();
                     string log1 = create.CreateJournalEntry();
-                    
                     // Call CreateJournalEntry()
                     break;
                 case 2:
