@@ -20,14 +20,13 @@ class Program
             switch(response)
             {
                 case 1:
-                    Console.WriteLine("Create");
-                    JournalEntry create = new JournalEntry();
+                    Journal create = new Journal();
                     string log1 = create.CreateJournalEntry();
                     // Call CreateJournalEntry()
                     break;
                 case 2:
-                    Console.WriteLine("Display");
-                    JournalEntry display = new JournalEntry();
+                    Console.WriteLine("-------------Display------------");
+                    Journal display = new Journal();
                     display.DisplayEntries();
                     //display.SaveToFile();
 
