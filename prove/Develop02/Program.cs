@@ -33,14 +33,14 @@ class Program
                     //Call Display Journal()
                     break;
                 case 3:                
-                    Console.WriteLine("Enter Filename: ");
+                    Console.WriteLine("----------Enter Filename---------- ");
                     string _fileName = Console.ReadLine();
                     Journal save = new Journal();
                     save.ReadFromFile(_fileName);
                     //Call ReadFromFile()
                     break;
                 case 4:               
-                    Console.WriteLine("Enter Filename: ");
+                    Console.WriteLine("-----------Enter Filename----------- ");
                     string _fileName2 = Console.ReadLine();
                     Journal write = new Journal();
                     write.WriteToFile(_fileName2);

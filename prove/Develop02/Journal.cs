@@ -33,6 +33,7 @@ public class Journal
         string response = Console.ReadLine();
         JournalEntry entry = new JournalEntry(prompt,response,date);
         Entries.Add(entry);
+        Console.WriteLine();
         return "";
     }
 
@@ -73,6 +74,8 @@ public class Journal
 
     public void ReadFromFile(string filename)
     {
+        Journal.Entries.Clear();
+        
         string[] lines = File.ReadAllLines(filename);
         foreach (string line in lines)
 
