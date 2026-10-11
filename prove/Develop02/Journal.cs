@@ -43,6 +43,7 @@ public class Journal
         {
             Console.WriteLine($"{item._date}, {item._prompt}");
             Console.WriteLine($"{item._response}");
+            Console.WriteLine();
         }
      }
    /* public void DisplayJournal()
@@ -63,7 +64,7 @@ public class Journal
 
         using (StreamWriter outputFile = new StreamWriter(filename))
         {        
-            foreach(JournalEntry entry in _entries)
+            foreach(JournalEntry entry in Entries)
             {
                 outputFile.WriteLine(entry.CreateFileSystemString());
             }
@@ -72,16 +73,17 @@ public class Journal
 
     public void ReadFromFile(string filename)
     {
-        string[] lines = System.IO.File.ReadAllLines(filename);
+        string[] lines = File.ReadAllLines(filename);
         foreach (string line in lines)
 
         {
-            string[] parts = line.Split("#");
+            string[] parts = line.Split('|');
             string date = parts[0];
             string prompt = parts[1];
             string response = parts[2];
             JournalEntry entry = new JournalEntry(prompt, response, date); 
-            this.CreateEntry(entry);
+            Entries.Add(entry);
+            //this.CreateEntry(entry);
         }
 
     }
