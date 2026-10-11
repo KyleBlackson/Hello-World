@@ -10,7 +10,7 @@ public class Journal
     {
         foreach(JournalEntry entry in _entries)
         {
-            entry.DisplayJournalEntry();
+            entry.DisplayEntries();
         }
     }
 

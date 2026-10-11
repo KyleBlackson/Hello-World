@@ -3,7 +3,6 @@ class Menu
     
     public int ProcessMenu()
     {
-        Console.WriteLine("In the menu class");
 
         int input = 0;
 

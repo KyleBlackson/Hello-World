@@ -13,13 +13,6 @@ public class JournalEntry
         _date = date;
     }        
 
-
-    public void DisplayJournalEntry()
-    {
-        Console.WriteLine($"{_date}, {_prompt}");
-        Console.WriteLine($"{_response}");
-    }
-
 /// <summary>
 /// 
 /// </summary>
@@ -34,27 +27,25 @@ public class JournalEntry
         };
         _date = DateTime.Now.ToString();
         _prompt = prompts[0];
+        Console.WriteLine($"---------------{_date}--------------");
         Console.WriteLine($"{_prompt} ");
         _response = Console.ReadLine();
-
-        JournalEntry log2 = new JournalEntry();
-        log2._userInput = Console.ReadLine();
+        JournalEntry log2 = new JournalEntry(_prompt,_response,_date);
+        log2._userInput = _response;
         userLogs.Add(log2);
-
-
-        foreach (JournalEntry item in userLogs)
-        {
-            Console.WriteLine(item._userInput);
-        }
         return "";
     }
 
     //static void SaveToFile(List<JournalEntry> userLogs)
     public void DisplayEntries()
     {
+        Console.WriteLine($"{_date}, {_prompt}");
+        Console.WriteLine($"{_response}");
         foreach (JournalEntry item in userLogs)
         {
             Console.WriteLine(item._userInput);
+            Console.WriteLine($"{item._date}, {item._prompt}");
+            Console.WriteLine($"{item._response}");
         }
      }
 
