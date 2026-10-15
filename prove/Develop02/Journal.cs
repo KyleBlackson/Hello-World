@@ -10,7 +10,7 @@ public class Journal
     
     public static List<JournalEntry> Entries = new List<JournalEntry>();
 
-        public string CreateJournalEntry()
+    public string CreateJournalEntry()
     {
         string [] prompts =
     // ------------Random Generator--------------
