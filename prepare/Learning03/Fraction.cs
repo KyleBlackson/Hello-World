@@ -8,27 +8,30 @@ class Fraction
     private int topNumber;
     private int bottomNumber;
     private string fraction;
-    private double _decimal;
 
     public Fraction()
     {
-        topNumber = 1/1;
+        topNumber = 1;
+        bottomNumber = 1;
     }
+
     public Fraction(int wholeNumber)
     {
-        topNumber = wholeNumber/1;
+        topNumber = wholeNumber;
+        bottomNumber = 1;
     }
     public Fraction(int _topNumber, int _bottomNumber)
     {
         fraction = $"{_topNumber}/{_bottomNumber}";
     }
+
     public int GetTop()
     {
         return topNumber;
     }
     public void SetTop(int _topNumber)
     {
-        _topNumber = topNumber;
+        topNumber = _topNumber;
     }
 
     public int GetBottom()
@@ -38,17 +41,20 @@ class Fraction
 
     public void SetBottom(int _bottomNumber)
     {
-        _bottomNumber = bottomNumber;
+        bottomNumber = _bottomNumber;
     }
 
-    public string GetFractionString(string fraction)
+    public string GetFractionString()
     {
-         fraction = $"{SetTop}/{SetBottom}";
+         fraction = $"{this.topNumber}/{this.bottomNumber}";
          return fraction;
     }
 
-    public void GetDecimalValue(double _decimal)
+    public double GetDecimalValue()
     {
-       // _decimal = SetTop/SetBottom;
+        double d_topNumber = topNumber;
+        double d_bottomNumber = bottomNumber;
+        double _decimal = d_topNumber/d_bottomNumber;
+        return _decimal;
     }
 }

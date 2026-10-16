@@ -16,7 +16,21 @@ class Program
         p3.SetTop(6);
         p3.SetBottom(7);
 
-        Console.WriteLine(p3.GetFractionString(""));
+        Console.WriteLine(p3.GetFractionString());
+        Console.WriteLine(p3.GetDecimalValue());
+        
+        Fraction f = new Fraction();
+    
+        for (int i = 0; i <25; i++)
+        {
+        Random rnd = new Random();
+        int topNumber = rnd.Next(0,100);
+        int bottomNumber = rnd.Next(0,100);
+        f.SetTop(topNumber);
+        f.SetBottom(bottomNumber);
+        Console.WriteLine($"Fraction 1: string:{f.GetFractionString()} Number:{f.GetDecimalValue()}");
+        }
+    
 
     }
 }
