@@ -14,5 +14,18 @@ class Program
         Scripture John = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
         John.SplitVerse();
 
+        Console.WriteLine("Welcome to the Scripture Memorizer Program");
+        string UserInput = Console.ReadLine();
+        while (UserInput == "")
+        {
+        {
+        Console.Clear();
+        Console.WriteLine();
+        John316.DisplayReference();
+        
+        John.ChooseRandomWord();
+        UserInput = Console.ReadLine();
+        }
+        }
     }
 }
