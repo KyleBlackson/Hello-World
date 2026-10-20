@@ -11,5 +11,8 @@ class Program
 
         ScriptureReference John316 = new ScriptureReference("John", "3", "16");
         John316.DisplayReference();
+        Scripture John = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+        John.SplitVerse();
+
     }
 }
