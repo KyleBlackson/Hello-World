@@ -13,10 +13,10 @@ class Scripture
         string [] w  = Regex.Split(words, @"\W+");
         verse1.AddRange(w);
 
-        foreach (string p in w)
+        /*foreach (string p in w)
         {
         Console.Write($"{p} ");
-        }
+        }*/
         return w;
     }
 
@@ -28,7 +28,7 @@ class Scripture
         Word myWord = new Word(prompt);
         string tempLook = prompt;
         myWord.Hide();
-        string tempHide = prompt;
+        string tempHide = myWord.GetWordString();
 
         for (int i = 0; i < verse1.Count; i++)
         {
@@ -39,7 +39,7 @@ class Scripture
         }
         foreach (string q in verse1)
         {
-        Console.Write(q);
+        Console.Write($"{q} ");
         }
     }
 
