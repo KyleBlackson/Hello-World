@@ -4,10 +4,10 @@ using System.Security.Cryptography.X509Certificates;
 class ScriptureReference
 {
     private string _book;
-    public string _chapter;
-    public string _verse;
-    public string _startVerse;
-    public string _endVerse;
+    private string _chapter;
+    private string _verse;
+    private string _startVerse;
+    private string _endVerse;
     public ScriptureReference(string book, string chapter, string verse)
     {
         _book = book;
