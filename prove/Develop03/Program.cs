@@ -19,6 +19,8 @@ class Program
                     Scripture John = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
                     John316.DisplayReference();
                     Console.WriteLine("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+                    Console.WriteLine("");
+                    Console.WriteLine("Press ENTER to continue or 'q' to return to menu");
                     John.SplitVerse();
                     string UserInput = Console.ReadLine();
                     while (UserInput == "")
@@ -27,6 +29,8 @@ class Program
                     Console.Clear();
                     John316.DisplayReference();
                     John.ChooseRandomWord();
+                    Console.WriteLine("");
+                    Console.WriteLine("Press ENTER to continue or 'q' to return to menu");
                     UserInput = Console.ReadLine();
                     }
                     }
@@ -39,6 +43,8 @@ class Program
                     Scripture Proverbs = new Scripture("Trust in the Lord with all thine heart and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
                     Proverbs356.DisplayReference();
                     Console.WriteLine("Trust in the Lord with all thine heart and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
+                    Console.WriteLine("");
+                    Console.WriteLine("Press ENTER to continue or 'q' to return to menu");
                     Proverbs.SplitVerse();
                     string UserInput2 = Console.ReadLine();
                     while (UserInput2 == "")
@@ -47,6 +53,8 @@ class Program
                     Console.Clear();
                     Proverbs356.DisplayReference();
                     Proverbs.ChooseRandomWord();
+                    Console.WriteLine("");
+                    Console.WriteLine("Press ENTER to continue or 'q' to return to menu");
                     UserInput2 = Console.ReadLine();
                     }
                     }
@@ -59,6 +67,8 @@ class Program
                     Scripture Corinthians = new Scripture("There hath no temptation taken you but such as is common to man: but God is faithful, who will not suffer you to be tempted above that ye are able; but will with the temptation also make a way to escape, that ye may be able to bear it.");
                     Corinthians1013.DisplayReference();
                     Console.WriteLine("There hath no temptation taken you but such as is common to man: but God is faithful, who will not suffer you to be tempted above that ye are able; but will with the temptation also make a way to escape, that ye may be able to bear it.");
+                    Console.WriteLine("");
+                    Console.WriteLine("Press ENTER to continue or 'q' to return to menu");
                     Corinthians.SplitVerse();
                     string UserInput3 = Console.ReadLine();
                     while (UserInput3 == "")
@@ -67,6 +77,8 @@ class Program
                     Console.Clear();
                     Corinthians1013.DisplayReference();
                     Corinthians.ChooseRandomWord();
+                    Console.WriteLine("");
+                    Console.WriteLine("Press ENTER to continue or 'q' to return to menu");
                     UserInput3 = Console.ReadLine();
                     }
                     }
@@ -80,6 +92,8 @@ class Program
 
                     Moroni1032.DisplayReference();
                     Console.WriteLine("Yea, come unto Christ, and be perfected in him, and deny yourselves of all ungodliness; and if ye shall deny yourselves of all ungodliness, and love God with all your might, mind and strength, then is his grace sufficient for you, that by his grace ye may be perfect in Christ; and if by the grace of God ye are perfect in Christ, ye can in nowise deny the power of God.And again, if ye by the grace of God are perfect in Christ, and deny not his power, then are ye sanctified in Christ by the grace of God, through the shedding of the blood of Christ, which is in the covenant of the Father unto the remission of your sins, that ye become holy, without spot.");
+                    Console.WriteLine("");
+                    Console.WriteLine("Press ENTER to continue or 'q' to return to menu");
                     Moroni.SplitVerse();
                     string UserInput4 = Console.ReadLine();
                     while (UserInput4 == "")
@@ -88,6 +102,8 @@ class Program
                     Console.Clear();
                     Moroni1032.DisplayReference();
                     Moroni.ChooseRandomWord();
+                    Console.WriteLine("");
+                    Console.WriteLine("Press ENTER to continue or 'q' to return to menu");
                     UserInput4 = Console.ReadLine();
                     }
                     }

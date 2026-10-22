@@ -33,6 +33,7 @@ class Scripture
         myWord.Hide();
         string tempHide = myWord.GetWordString();
         int counter = 0;
+        int ender = 0;
         while (tempLook == tempHide)
         {
             Random rnd2 = new Random();
@@ -42,6 +43,7 @@ class Scripture
             myWord2.Hide();
             tempHide = myWord2.GetWordString();
             counter++;
+            ender++;
             if (counter > 999)
             {
                 break;
@@ -58,6 +60,11 @@ class Scripture
         foreach (string q in verse1)
         {
         Console.Write($"{q} ");
+        }
+        if (ender > verse1.Count)
+        {
+            Menu toMenu = new Menu();
+            toMenu.ProcessMenu();
         }
     }
 }
