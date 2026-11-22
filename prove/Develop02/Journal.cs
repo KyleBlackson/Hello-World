@@ -28,7 +28,7 @@ public class Journal
             "What is one thing you wish you had done differently today?",
             "What motivated you the most today?",
             "What is something you noticed today that you usually overlook?",
-            "What is one thing you’re grateful for right now",
+            "What is one thing you're grateful for right now",
             "What challenged you today and how did you respond?"
         };
 

@@ -1,6 +1,6 @@
 using System.Dynamic;
 
-abstract class BaseGoal
+public abstract class BaseGoal
 {
     private string _name;
     private string _description;
@@ -51,6 +51,13 @@ abstract class BaseGoal
             completeString = "X";
         return $"[{completeString}] {_goalType} Goal Name: {_name}, Description: {_description}, Points: {_points}";
     }
+    public virtual string FileOutputString()
+    {
+        string completeString = "False";
+        if (_complete)
+            completeString = "True";
+        return $"{completeString}|{_goalType}|{_name}|{_description}|{_points}";
+    }
 
     public int MarkComplete()
     {
@@ -58,5 +65,9 @@ abstract class BaseGoal
         return _points;
     }
 
+    public string CreateFileSystemString()
+    {
+        return FileOutputString();
+    }
     public abstract int RecordEvent();
 }

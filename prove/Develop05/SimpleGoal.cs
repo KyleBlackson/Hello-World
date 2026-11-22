@@ -10,7 +10,11 @@ class SimpleGoal : BaseGoal
 
     public override int RecordEvent()
     {
-        //TBD
-        return 0;
+        return MarkComplete();
+    }
+
+    public override string GetConsoleString()
+    {
+        return base.GetConsoleString();
     }
 }
