@@ -3,7 +3,7 @@ using System.Reflection.Metadata;
 public class Goals
 {
     private static string _filename;
-    private static int _totalScore;
+    private static int _totalScore = 0;
     public static List <BaseGoal> _goals = new List<BaseGoal>();
 
     public Goals(string name, string description, int points, bool complete, string goalType)
@@ -60,7 +60,7 @@ public class Goals
 
     public static void DisplayScore()
     {
-        
+        Console.WriteLine($"Total Points: {_totalScore}");
     }
 
     public static void GiveX()
@@ -75,6 +75,7 @@ public class Goals
 
         BaseGoal selectedGoal = _goals[choice - 1];
         selectedGoal.RecordEvent();
+        _totalScore = _totalScore+selectedGoal.MarkComplete();
     }
 
 }

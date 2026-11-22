@@ -20,6 +20,7 @@ class Program
                             SimpleGoal mySimpleGoal = new SimpleGoal();
                             Goals.AddGoal(mySimpleGoal);
                             Console.WriteLine(mySimpleGoal.GetConsoleString());
+                            //Goals.DisplayScore();
                         break;
 
                         case 2:
@@ -37,6 +38,7 @@ class Program
                     Console.WriteLine("----------Current Goals---------- ");
                     //Goals load = new Goals();
                     Goals.DisplayGoals();
+                    Goals.DisplayScore();
                     break;
                 case 3:      
                     Console.WriteLine("----------Enter Filename---------- ");
