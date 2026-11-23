@@ -68,10 +68,6 @@ public class Goals
 
         for (int i = 0; i < _goals.Count; i++)
         {
-            Console.WriteLine($"Count: {_goals.Count}");
-            Console.WriteLine($"i: {i}");
-            BaseGoal goalName = _goals[2];
-            
             Console.WriteLine($"{i + 1}. {_goals[i].GetName()}");
         }
 
@@ -81,12 +77,6 @@ public class Goals
         int tempint = selectedGoal.RecordEvent();
         _totalScore = _totalScore+tempint;
         Console.WriteLine($"Congratulations! You got {tempint} points!");
-    }
-
-    public string GetName()
-    {
-
-        return "";
     }
 
 }
