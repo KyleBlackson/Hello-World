@@ -24,11 +24,15 @@ class Program
                         break;
 
                         case 2:
-
+                            EternalGoal myEternalGoal = new EternalGoal();
+                            Goals.AddGoal(myEternalGoal);
+                            Console.WriteLine(myEternalGoal.GetConsoleString());
                         break;
 
                         case 3:
-
+                            CheckListGoal myCheckListGoal = new CheckListGoal();
+                            Goals.AddGoal(myCheckListGoal);
+                            Console.WriteLine(myCheckListGoal.CheckListString());
 
                         break;
                     }

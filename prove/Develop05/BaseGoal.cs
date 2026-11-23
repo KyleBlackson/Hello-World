@@ -49,7 +49,7 @@ public abstract class BaseGoal
         string completeString = " ";
         if (_complete)
             completeString = "X";
-        return $"[{completeString}] {_goalType} Goal Name: {_name}, Description: {_description}, Points: {_points}";
+        return $"[{completeString}] {_name}, ({_description})";
     }
     public virtual string FileOutputString()
     {
@@ -65,9 +65,18 @@ public abstract class BaseGoal
         return _points;
     }
 
+    public int AddPoints()
+    {
+        return _points;
+    }
     public string CreateFileSystemString()
     {
         return FileOutputString();
+    }
+
+    public string GetName()
+    {
+        return _name;
     }
     public abstract int RecordEvent();
 }

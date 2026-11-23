@@ -10,7 +10,11 @@ class EternalGoal : BaseGoal
 
     public override int RecordEvent()
     {
-        //return points
-        return 0;
+        return AddPoints();
+    }
+
+    public override string GetConsoleString()
+    {
+        return base.GetConsoleString();
     }
 }
